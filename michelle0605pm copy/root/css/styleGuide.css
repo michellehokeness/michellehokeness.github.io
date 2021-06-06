@@ -1,0 +1,835 @@
+/* FONT FAMILIES
+    Volina - Regular(Logo Text)
+        font-family: volina, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+    Dancing Script - Regular
+        font-family: 'Dancing Script', cursive;
+        font-weight: 400;
+        font-style: normal;
+    Dancing Script - Medium
+        font-family: 'Dancing Script', cursive;
+        font-weight: 500;
+        font-style: normal;
+    Dancing Script - Semi-bold
+        font-family: 'Dancing Script', cursive;
+        font-weight: 600;
+        font-style: normal;
+    Dancing Script - Bold
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-style: normal;
+        
+
+    Open Sans - Light italic
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    Open Sans - Regular
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+*/
+
+/* COLORS
+    drk green (logo, main text): #336600
+                                 R:51 G:102 B:0
+                                 C:79 M:36 Y:100 K:28
+    med green (nav bar):         #99cc33
+                                 R:153 G:204 B:51
+                                 C:45 M:0 Y:100 K:0
+    lit green (background):      #cccc99
+                                 R:204 G:204 B:153
+                                 C:22 M:12 Y:47 K:0
+    orange ("Booking"):          #ff9900
+                                 R:255 G:153 B:0
+                                 C:0 M:47 Y:100 K:0
+    drk orange ("Read more"):    #ff6633 
+                                 R:255 G:102 B:51
+                                 C:0 M:75 Y:85 K:0
+    white (article backgrounds): #ffffff
+                                 R:255 G:255 B:255
+                                 C:0 M:0 Y:0 K:0
+    brown (alternate):           #993300
+                                 R:153 G:51 B:0
+                                 C:26 M:88 Y:100 K:24
+    blue (alternate):            #336699
+                                 R:51 G:102 B:153
+                                 C:86 M:60 Y:17 K:2
+    yellow (color in images):    #ffcc33
+     approximate                 R:25 G:204 B:51
+*/
+
+/* BROWSER SUPPORT
+main {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}*/
+
+/* TABLE OF CONTENTS
+    1. LINKED STYLES
+        1a. GENERAL
+        1b. FONTS
+        1c. CLICKABLE LOGO
+        1d. LINKS
+        1e. CLICKABLE ICONS
+        1f. BUTTONS
+        1g. SMALL SCREEN NAVIGATION
+        1h. FORMS
+    2. THIS PAGE ONLY STYLES
+        2a. Grid Setup(Page Layout)/General
+        2b. Header 
+        2c. Colors
+        2d. Icons
+        2e. Buttons
+        2f. Typography
+        2g. Forms
+        2h. Images
+        2i. Special Links
+        2j. Image Sizes
+        2k. HTML and CSS Styles
+        2l. @media small screen 600px
+*/
+
+
+/* ---------- 1. LINKED STYLES ---------- */
+/* ----------      1a. GENERAL ---------- */
+article, aside, audio, figure, footer, header, main, nav, section, video, {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #cccc99;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------     1b. FONTS ---------- */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #ff9900;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: #336600;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #99cc33;
+}
+
+h4 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #336600;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #336600;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #336600;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #336600;
+}
+
+/* ----------     1c. CLICKABLE LOGO ---------- */
+a:hover.logo {
+    background-color: transparent;
+}
+
+/* ----------     1d. LINKS ---------- */
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #ff6633;
+}
+
+a:visited {
+    color: #ff9900;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #ff6633;
+}
+
+a:active {
+    color: #fff;
+    background-color: #ff9999;
+}
+
+a.contactUs {
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a:visited.contactUs {
+    color: #ff6633;
+}
+
+a:hover.contactUs {
+    color: #fff;
+    background-color: #ff6633;
+}
+
+a:active.contactUs {
+    color: #fff;
+    background-color: #ff9999;
+}
+
+a.navLink {
+    text-decoration: none;
+    color: #fff;
+    background-color: #99cc33;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:visited.navLink {
+    color: #336600;
+}
+
+a:hover.navLink {
+    color: #cccc99;
+}
+
+a:active.navLink {
+    color: #cccc99;
+    background-color: #99cc66;
+}
+
+/* ----------     1e. CLICKABLE ICONS ---------- */
+a:hover.clickableIcons {
+    background-color: transparent;
+}
+
+/* ----------     1f. BUTTONS ---------- */
+.reset {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #fff;
+    color: #ff6633;
+    border-color: #ff6633;
+    box-shadow: 2px 2px 1px #999;
+    cursor: pointer;
+}
+
+.resetAlternate {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ff6633;
+    color: #fff;
+    border-color: #ff6633;
+    cursor: pointer;
+}
+
+.submit {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ff6633;
+    color: #fff;
+    border-color: #fff;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 1px #999;
+    cursor: pointer;
+}
+
+.submitAlternate {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ff6633;
+    color: #fff;
+    border-color: #ff9900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ff6633;
+    color: #fff;
+    border-color: #ff9900;
+    box-shadow: 2px 2px 1px #999;
+    cursor: pointer;
+}
+
+.buttonAlternate {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #ff9900;
+    color: #fff;
+    border-color: #ff6633;
+    cursor: pointer;
+}
+
+/* ----------     1g. SMALL SCREEN NAVIGATION ---------- */
+nav {
+    position: relative;
+    cursor: pointer;
+}
+
+input#navToggle {
+    display: none;
+}
+
+input#navToggle ~ label {
+    position: relative;
+    left: 90%;
+    width: 2rem;
+    height: 1.25rem;
+}
+
+input#navToggle ~ label > span,
+input#navToggle ~ label > span::before,
+input#navToggle ~ label > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: .25rem;
+    top: 0;
+    background-color: #ff6633;
+}
+
+input#navToggle ~ label > span::before {
+    top: -.5rem;
+}
+
+input#navToggle ~ label > span::after {
+    top: .5rem;
+}
+
+nav ul {
+    position: absolute;
+    top: 3rem;
+    right: -150%;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+    margin: 0!important;
+}
+
+nav li {
+    padding: 5px;
+    background-color: #99cc33;
+}
+
+#navToggle:checked ~ ul {
+    left: 0;
+}
+
+a.navLinkSmall {
+    text-decoration: none;
+    color: #fff;
+    background-color: #99cc33;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:visited.navLinkSmall {
+    color: #336600;
+}
+
+a:hover.navLinkSmall {
+    color: #cccc99;
+}
+
+a:active.navLinkSmall {
+    color: #cccc99;
+}
+
+/* ----------     1h. FORMS ---------- */
+fieldset {
+    padding: 10px;
+    border-style: dotted;
+    border-color: #336600;
+}
+
+legend {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #336600;
+}
+
+input {
+    margin: 0 0 5px 32px;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: solid .25px #336600;
+    cursor: pointer;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #336600;
+}
+
+select {
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #336600;
+    border: solid .25px #336600;
+    cursor: pointer;
+}
+
+textarea {
+    margin-left: 10px;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: solid .25px #336600;
+    cursor: pointer;
+}
+
+form li {
+    list-style-type: none;
+}
+
+
+radio {}
+checkbox {}
+option {}
+
+
+
+/*--------------------------------------------------------------*/
+
+
+
+
+/* ---------- 2. THIS PAGE ONLY STYLES ---------- */
+/* ----------     2a. Grid Setup(Page Layout)/Global ---------- */
+.styleGuideMainContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;  
+}
+
+.styleGuideMainContainer .item {
+    border: solid 1px black;
+    background-color: #fff;
+}
+
+.styleGuideMainContainer .styleGuideMainHeader h1 {
+    font-size: 1.75em;
+}
+
+.styleGuideMainHeader, .i4, .i8, .i9 {
+    grid-column: 1/-1;
+}
+
+.i1, .i2, .i3, .i5, .i6, .i7 {
+    grid-column: span 2; 
+}
+
+.i1, .i5 {
+    grid-column: 2/4;
+}
+
+.item {
+    padding: 12px;
+}
+
+/* ----------     2b. Header  ---------- */
+.styleGuideMainHeader {
+    display: flex;
+}
+
+.styleGuideMainHeader .logo2 {
+    background-color: #cccc99;
+}
+
+.styleGuideMainHeader .volina {
+    font-family: volina, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25em;
+}
+
+.styleGuideMainHeader .logoLocation {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #336600; 
+}
+
+/* ----------     2c. Colors ---------- */
+.i1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.i1 h2 {
+    width: 100%;
+}
+
+.i1 p {
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+
+.i1 .color1 {background-color: #336600;}
+.i1 .color2 {background-color: #99cc33;}
+.i1 .color3 {background-color: #cccc99;}
+.i1 .color4 {background-color: #ff9900;}
+.i1 .color5 {background-color: #ff6633;}
+.i1 .color6 {
+    background-color: #ffffff;
+    border: solid 1px black;
+    color: #cccc99;
+}
+.i1 .color7 {background-color: #993300;}
+.i1 .color8 {background-color: #336699;}
+
+/* ----------     2d. Icons ---------- */
+.i2 h2 {
+    margin-bottom: 20px;
+}
+.i2 img {
+    width: 50px;
+    margin: 10px 0 10px 20px;
+}
+
+.i2 .iconsColor {
+    background-color: #cccc99;
+}
+
+.i2 .iconSize ul {
+    padding: 10px 0 5px 20px;
+}
+
+/* ----------     2e. Buttons ---------- */
+.i3 {
+    padding-bottom: 20px;
+}
+
+.i3 input, .i3 button {
+    margin: 20px;
+}
+
+.i3 .colorText {
+    margin-bottom: 20px;
+}
+
+.i3 nav {
+    padding: 20px;
+}
+
+/* ----------     2f. Typography ---------- */
+.i4 {
+    display: grid;
+    padding-right: 200px;
+}
+
+.i4 .headings, .i4 .paragraph {
+    margin: 20px;
+}
+
+.i4 h5 {
+    display: inline;
+    background-color: #99cc33;
+}
+
+.i4 img {
+    margin-left: 150px;
+}
+
+.i4 li {
+    margin-left: 20px
+}
+
+/* ----------     2g. Forms ---------- */
+.i5 {
+    padding: 20px;
+}
+
+/* ----------     2h. Images ---------- */
+.i6 .color1 {
+    background-color: #336600;
+    color: #fff;
+}
+
+.i6 .color4 {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+.i6 .imageYellow {
+    background-color: #ffcc33;
+    color: #fff;
+}
+
+.i6 img {
+    width: 60px;
+    margin: 20px;
+}
+
+.i6 .imageOrange {
+    background-color: #ff6633;
+    color: #fff;
+}
+
+.i6 .neutrals {
+    margin-left: 175px;
+    margin-bottom: 8px;
+    background-color: beige;
+}
+
+/* ----------     2i. Special Links ---------- */
+.i7 {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+}
+
+.i7 h2 {
+    margin-bottom: 20px;
+}
+
+.i7 a {
+    margin: 100px;
+}
+
+.i7 .link {
+    display: inline;
+    text-decoration: underline;
+    color: #ff6633;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.i7 p {
+    margin: 10px;
+}
+
+.i7 hr {
+    margin: 10px 0 20px 0;
+}
+
+.i7 h6 {
+    margin: 20px 0 5px 0;
+}
+
+.i7 p.link.hoverLink {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #ff6633;
+}
+
+.i7 p.link.visitedLink {
+    color: #ff9900;
+}
+
+.i7 p.link.activeLink {
+    background-color: #ff9999;
+    color: #fff;
+}
+
+.i7 .regLink2 {color: #ff9900;}
+
+.i7 .hoverLink2, .i7 .hoverLink3 {
+    color: #fff;
+    background-color: #ff6633;
+}
+
+.i7 .activeLink2, .i7 .activeLink3 {
+    background-color: #ff9999;
+    color: #fff;
+}
+
+.i7 .visitedLink3 {
+    color: #ff9900;
+}
+
+.i7 p.link.activeLink4 {
+    margin-right: 0;
+}
+
+.i7 .regLink4 {
+    text-decoration: none;
+    color: #fff;
+    background-color: #99cc33;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.i7 .visitedLink4 {
+    text-decoration: none;
+    color: #336600;
+    background-color: #99cc33;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.i7 .hoverLink4 {
+    text-decoration: none;
+    color: #cccc99;
+    background-color: #99cc33;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.i7 .activeLink4 {
+    text-decoration: none;
+    color: #cccc99;
+    background-color: #99cc33;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ----------     2j. Sizes ---------- */
+.i8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto auto;
+}
+
+.i8 h2 {
+    grid-column: 1/-1;
+}
+
+.i8 img {
+    padding: 0 25px 0 25px;
+}
+
+.i8 .screen h2 {
+    margin-top: 30px;
+}
+
+.i8 ul {
+    padding: 0 20px 0 20px;
+    margin: 10px;
+}
+
+/* ----------     2k. HTML and CSS Styles ---------- */
+.i9 {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+.i9 li {
+    margin-left: 30px;
+}
+
+.i9 h2 {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+}
+
+/* ----------    2l. @media small screen 600px ---------- */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .styleGuideMainContainer .styleGuideMainHeader {
+        flex-direction: column;
+    }
+    
+    .styleGuideMainHeader p {
+        margin-top: 0;
+    }
+    
+    .styleGuideMainHeader h2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    .i1, .i2, .i3, .i5, .i6, .i7 {
+        grid-column: 2/8;
+    }
+    
+    .i4 {
+    padding-right: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
